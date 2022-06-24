@@ -13,7 +13,6 @@ spec:
   selector:
     matchLabels:
       app: {{ template "helm-guestbook.name" . }}
-      namespace: {{ template "helm-guestbook.name" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
