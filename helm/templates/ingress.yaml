@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ template "helm-guestbook.name" . }}
+                name: {{ template "helm-guestbook.fullname" . }}
                 port:
                   number: {{ .Values.service.port }}
