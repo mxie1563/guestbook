@@ -2,7 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ template "helm-guestbook.fullname" . }}
-  namespace: {{ template "helm-guestbook.name" . }}
   labels:
     app: {{ template "helm-guestbook.name" . }}
 spec:
